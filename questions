@@ -1,0 +1,17 @@
+
+# in this function, why is print() on line 8?
+
+def fib(n):    # write Fibonacci series up to n
+    a, b = 0, 1
+    while a < n:
+        print(a, end = " ")
+        a, b = b, a+b
+    print()
+fib(10)
+
+
+# how do I print Arabic, Hebrew, etc. correctly
+# from right to left?
+
+# how do I use a python3 shell by default
+
