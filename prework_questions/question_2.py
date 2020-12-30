@@ -1,3 +1,4 @@
+#Print the first 100 odd numbers.
 list_length = 0
 number = 1
 while list_length < 100:
