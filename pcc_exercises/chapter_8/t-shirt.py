@@ -4,6 +4,7 @@
 # make_shirt("large", "Have a nice day.")
 
 def make_shirt(size="large", text="I love Python."):
+    """Print the size and text of a shirt."""
     if size[0].lower() == "e":
         print("Your ordered an " + size.lower() + " shirt with the text: '" + 
         text + "'.")
