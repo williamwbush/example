@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>William Bush</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: rgb(240, 244, 245);
+    }
+    
+    .header {
+        padding: 36px;
+        text-align: center;
+        background-image: url("https://res.cloudinary.com/dp00cig9y/image/upload/v1609800412/portfolio%20images/images/section_banners/missouri_river_bnaemw.jpg");
+    }
+
+    .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+    }
+    
+    h1 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size:50px;
+    }
+    
+    h2 {
+        color: rgb(60, 60, 63);
+        font-size:30px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+    
+    p {
+        font-family: verdana;
+        font-size: 16px;
+    }
+
+    li {
+        font-family: verdana;
+        font-size: 15px;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: rgb(75, 84, 102);
+    }
+    
+    .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    .topnav a:hover {
+        background-color: rgb(164, 226, 250);
+        color: rgb(7, 9, 14);
+    }
+    
+    .topnav a.active {
+        background-color: #5831e2;
+        color: rgb(115, 54, 214);
+    }
+    
+    .topnav-right {
+        float: right;
+    }
+    
+    .leftcolumn {   
+        float: left;
+        width: 75%;
+    }
+
+    .rightcolumn {
+        float: left;
+        width: 24%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+    }
+
+    .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {   
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .topnav a {
+            float: none;
+            width: 100%;
+        }
+    }    
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    input {
+        width: 100%;
+    }
+    
+    div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
+    }
+
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+
+    input[type=text], select {
+        width:100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type=email], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        background-color: #cccccc;
+    }
+
+    input[type=submit]:hover {
+        background-color: #c4d8c8;
+    }
+                
+    #question {
+        height:50px;
+        font-size:9pt;
+    }
+
+    figure {
+        width:100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    address {
+        width:100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    dd {
+        font-size: 14px;
+        font-family: verdana;
+        margin-left: 200px;
+        text-align: left;
+    }
+
+    dt {
+        font-size: 16px;
+        font-family: verdana;
+        margin-left: 80px
+    }
+
+    ul.b {
+        list-style-type: square;
+        padding: 6px;
+        margin-left: 50px;
+        margin-right: 20%;
+        line-height: 1.5;
+    }
+
+    ul.a {
+        list-style-type: square;
+        background:rgb(226, 236, 240);
+        padding: 6px;
+        margin-left: 50px;
+        margin-right: 20%;
+        line-height: 1.5;
+    }
+
+    ul.c {
+        background:rgb(226, 236, 240); 
+        list-style-type:square;
+        padding:6px;
+    }
+
+    ol {
+        list-style-type: square;
+        background:rgb(229, 226, 240);
+        padding: 6px;
+        margin-left: 50px;
+        margin-right: 20%;
+        line-height: 1.5;
+    }
+    dl {
+        background-color: rgb(255, 253, 226);
+        margin-left: 50px;
+        margin-right: 10%;
+        padding: 6px;
+    }
+
+    div.a {
+        text-indent: 35px;
+    }
+</style>
+
+</head>
+
+
+<body>
+
+<div class="header" title="Missouri River">
+    <h1>William Bush</h1>
+    </div>
+
+<div class="topnav">    
+    
+    <a href="#coding">Why I Want to Code</a>
+    <a href="#politics">Political Campaigns</a>
+    <a href="#birdwatching">Birdwatching</a>
+    <a href="favorite_birds.html">Favorite Bird Photos</a>
+    <a href="#piano">Piano</a>
+    <div class="topnav-right">
+        <a href="#about_me">About me</a>
+        <a href="#ama">Ask Me Anything</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="leftcolumn">
+        
+        <div class="card">
+            <img src=https://res.cloudinary.com/dp00cig9y/image/upload/v1609800290/portfolio%20images/images/section_banners/python_snake_jnp8fr.jpg 
+                title="python snake" alt="python snake" style="width: 100%" id="coding">
+            
+            <h3>A few reasons I am interested in a career in coding:</h3>
+            <p>
+                <ul class=b style="background-color: rgb(236, 240, 226);">
+                    <li>I like to solve problems.</li>
+                    <li>I think through these problems systematically and thoroughly.</li>
+                    <li>Coding is a skill that applies to a vast array of fields and would give me 
+                        the potential to always do work, professional or otherwise, that fulfills my 
+                        core values and interests. </li>
+                    </li>
+                    <li>I love to learn new languages and scripts, and have reached an advanced 
+                        level of French and an intermediate level of Spanish.  Since human languages 
+                        share many features with programming languages, my interest in this area 
+                        would make learning to code both easier and more fun.</li>
+                    <li>I'm attracted to the overal quality of life that a job as a developer or 
+                        engineer could bring.</li>
+                </ul>
+            </p>    
+        </div>
+
+        <div class="card">
+            <img src="https://res.cloudinary.com/dp00cig9y/image/upload/v1609800396/portfolio%20images/images/section_banners/voting_gd8afx.jpg" 
+                title="voting" alt="voting" style="width: 100%" id="politics">
+            
+            <h3>Claire McCaskill for U.S. Senate</h3>
+                <div class="a">
+                    <p>In 2018, I ran one of the busiest campaign field offices in Missouri, 
+                        coordinating volunteer activity, recruiting, training and supervising 
+                        volunteers. I helped organize candidate speaking events and conducted 
+                        presentations to engage volunteers. With a peak of 244 active volunteers, my 
+                        volunteers knocked over 70,000 doors in three months in the southwestern 
+                        St. Louis suburbs.</p>
+                </div>
+            
+            <h3>Jay Nixon for Missouri Governor</h3>
+                <div class="a">
+                    <p>In 2008, I worked as a junior field organizer recruiting volunteers, 
+                        making 140+ volunteer dials per night, and organizing phone banks.</p>
+                </div>
+            
+            <h3>Other Campaign Volunteer Work</h3>
+                <div class="a">
+                    <p>Over the years I have volunteered for many campaigns as a canvasser, 
+                        phonebanker, and other roles, dedicating all the energy I had to persuading 
+                        voters, getting out the vote, and winning the elections. Some recent 
+                        campaigns I have volunteered for include Joe Biden for President, Jason 
+                        Kander for U.S. Senate, and the "Yes on 2" campaign to expand Medicaid in 
+                        Missouri.
+                    </p>
+                </div>
+
+            <p class="center"><a href="#top">back to top</a></p>
+        </div>
+        
+        <div class="card" id="birdwatching">
+            <img src=https://res.cloudinary.com/dp00cig9y/image/upload/v1609800413/portfolio%20images/images/section_banners/bh_banner_wtext_v0lblk.png 
+            title="great blue heron" alt="great blue heron" style="width: 100%">
+            
+            <h3>Since the pandemic began, I have really gotten into birdwatching. </h3>
+            
+            <p>With birdwatching you can:
+                <ul class=a>
+                    <li>Explore your city and environment.</li>    
+                    <li>Help advance science and aid conservation efforts.</li>
+                    <li>Make friends with other eccentric birdwatchers.</li>
+                    <li>Exercise!</li>
+                    <li>Just get away from it all!!</li>
+                </ul>
+            </p>
+            
+            <div class="a">
+                <p>Birdwatching is a great activity for people of all ages. Even if you're 
+                    sitting at  home looking out the window at the birds in the trees or at your
+                    feeder, you can still participate in this lifetime activity.</p>
+            </div>
+            
+            <hr />
+
+            <div class="a">
+                <p>When you go birdwatching for the first time, or <dfn>birding</dfn>, as more 
+                    serious birders like to call it, here are a few tips to help you get 
+                    started.</p>
+            </div>
+            
+            <ol>
+                <li>Start in an ideal habitat and at the best time of day for the birds you 
+                    are seeking.</li>
+                <li>Stop, <b>look</b> and <i>listen</i>.</li>
+                <li>Be <del>extremely loud</del> <ins>as quiet as possible</ins>.</li>
+                <li><s>Sigh disappointedly when you miss a bird.</s><strong> Be patient.
+                    </strong></li>
+                <li>You won't be able to identify every bird.  That's normal.  If you can, 
+                    take pictures to help identify birds later if you don't have time to 
+                    look them up in your birding app or field guide.</li>
+            </ol>
+            
+            <hr />
+
+            <p><a href="favorite_birds.html">On this page</a> you can see some of my favorite bird 
+                pictures from the past year:</p>
+            
+            <!-- <hr />
+                
+            <p>Some interesting birding terms from the <cite>Audubon Dictionary for 
+                Birders:</cite></p>
+                <dl>
+                    <dt>Butterbutt</dt>
+                    <dd>If the warbler has a yellow blob above it’s tail, it must be a 
+                        butterbutt.</dd>
+                    <dt>Endemic</dt>
+                    <dd>Inhabiting only a limited and insular region.</dd>
+                    <dt>Lifer</dt>
+                    <dd>A first-time sighting for a birder.</dd>
+                    <dt>Pishing</dt>
+                    <dd>A sound that birders make to try and draw songbirds out into the 
+                        open. Sounds like pishhhh pishhhh.</dd>
+                    <dt>Purple pooper</dt>
+                    <dd>A less-than-endearing term for a Gray Catbird.</dd>
+                    <dt>Vagrant</dt>
+                    <dd>Straying well outside of the regular ecological range.</dd>
+                    <dt>Siesta time</dt>
+                    <dd>the height of the afternoon, when most birds tuck themselves out of 
+                        view.</dd>
+                </dl> -->
+            
+            <hr />
+
+            <p>To see more on my recent birdwatching, visit these links on ebird.org (opens 
+                in new window):</p>
+                
+                <ul class=b style="background-color: rgb(236, 240, 226)">
+                    <li><a href="https://ebird.org/profile/MTExOTc2MQ" target="_blank">My
+                        ebird profile.</a></li>
+                    <li><a href="https://ebird.org/media/catalog?mediaType=Photo&searchField=user&includeUnconfirmed=true&userId=USER1119761&regionCode=&sort=upload_date_desc&taxaLocale=en_US" 
+                        target="_blank"> Ebird photo collection.</a></li>
+                    <li><a href="https://ebird.org/checklist/S78340488" 
+                        target="_blank">Checklist</a> of the birds I saw on my most recent trip to 
+                        Montrose Point, along with some pictures.</li>
+                </ul>
+            
+            <p class="center"><a href="#top">back to top</a></p>
+        </div>
+        
+        <div class="card" id="piano">
+            <img src="https://res.cloudinary.com/dp00cig9y/image/upload/v1609800366/portfolio%20images/images/section_banners/old_piano_rmtrtb.jpg" 
+            alt="piano" title="piano" style="width: 100%" id="piano">
+            
+                <p class="center">Here is a video of me playing the piano:</p>
+            
+            <video style="width:50%" controls>
+                <source src="chopin_waltz.ogg" type="video/ogg">
+                <source src="chopin_waltz.mp4" type="video/mp4"> 
+                </video>
+            
+            <p class="center"><a href="#top">back to top</a></p>
+        </div>
+    </div>
+    
+    <div class="rightcolumn">
+        
+        <div class="card">
+            <h2 class="center" id="about_me">About Me</h2>
+            
+            <a href="https://res.cloudinary.com/dp00cig9y/image/upload/v1609800414/portfolio%20images/images/section_banners/william_in_nyc_anj1nt.jpg">
+                <img src="https://res.cloudinary.com/dp00cig9y/image/upload/v1609800414/portfolio%20images/images/section_banners/william_in_nyc_anj1nt.jpg" 
+                    alt="william bush in new york city" title="William in NYC" style="width:100%">
+            </a>
+
+            <div class="a">
+                <p>I am passionate about everything I approach, whether I'm working on a campaign, 
+                    a small business, or perfecting a new piece on the piano.</p>
+            </div>
+            
+            <div class="a">
+                <p>With a broad base of knowledge gained from my BA in political science at the 
+                    Unviersity of Chicago, I have many tools at my disposal when mastering new areas 
+                    of expertise.  My knowledge, values, and curiosity I hope will take me on a new
+                    path towards a career in coding.</p>
+            </div>
+            
+            <div class="a">
+                <p>Currently based in Chicago, I am still a St. Louisan at heart.</p>
+            </div>  
+        </div>
+        
+        <div class="card">
+            <h2 class=center>Family Photos</h2>
+            
+            <figure>
+                <a href="https://res.cloudinary.com/dp00cig9y/image/upload/v1609800313/portfolio%20images/images/family/sawyer_and_william_ruzbou.jpg">
+                    <img src="https://res.cloudinary.com/dp00cig9y/image/upload/v1609800313/portfolio%20images/images/family/sawyer_and_william_ruzbou.jpg" 
+                        alt="William and Sawyer selfie at the playground. William is wearing a mask." 
+                        title="William and Sawyer" style="width:100%">
+                </a>
+                <p>
+                    <figcaption>Here is me with my nephew Sawyer at the playground in Evanston.
+                    </figcaption>  
+                </p>
+            </figure>
+            
+            <figure>
+                <a href="https://res.cloudinary.com/dp00cig9y/image/upload/v1609800291/portfolio%20images/images/family/family_t8yfv0.jpg">
+                    <img src="https://res.cloudinary.com/dp00cig9y/image/upload/v1609800291/portfolio%20images/images/family/family_t8yfv0.jpg" 
+                        title="my family" alt="my family" style="width:100%">
+                </a>
+                <p>
+                    <figcaption>My family at the symphony in St. Louis.</figcaption>  
+                </p>
+            </figure>
+            
+            <figure>
+                <a href="https://res.cloudinary.com/dp00cig9y/image/upload/v1609800292/portfolio%20images/images/family/gus_and_leo_eofcjo.jpg">
+                    <img src="https://res.cloudinary.com/dp00cig9y/image/upload/v1609800292/portfolio%20images/images/family/gus_and_leo_eofcjo.jpg" 
+                        title="Gus and Leo" alt="My family's dogs, Gus and Leo." style="width: 100%">
+                </a>
+                <p>
+                    <figcaption>My family's dogs, Gus and Leo.</figcaption>  
+                </p>
+            </figure>    
+            
+            <p class="center"><a href="#top">back to top</a></p>
+        </div>
+        
+        <div class="card" id="ama">
+            <form action="">
+                <fieldset>
+                    <lengend>
+                        <h2 class="center">Ask Me Anything</h2>
+                    </lengend>
+                    
+                    <label>
+                        First Name
+                        <input type="text" name="first_name" maxlength="50" 
+                            placeholder="Your first name..." required>
+                    </label>
+
+                    <label>
+                        Last Name
+                        <input type="text" name="last_name" maxlength="50" 
+                            placeholder="Your last name..." required>
+                    </label>
+
+                    <label>
+                        Email
+                        <input type="email" name="email" maxlength="50" placeholder="Your email..." 
+                            required>  
+                    </label>
+
+                    <label>
+                        <input type="text" id="question" name="question" 
+                            placeholder="Type your question or comment here..." maxlength="250" 
+                            required>
+                    </label>
+
+                    <input type="submit" id="submit_question" name="submit_question" required>
+                </fieldset>
+            </form>
+            
+            <p class="center"><a href="#top">back to top</a></p>
+        </div>
+
+        <div class="card">
+            <h2 id="contact" class="center">Contact Info</h2>
+            
+            <address>
+                <p>email: <a href="mailto:wbush89@gmail.com">wbush89@gmail.com</a></p>
+                <p>linkedin: <a href="https://www.linkedin.com/in/william-bush-a56404110/" 
+                    target="_blank">
+                    William Bush</a></p>
+                <p>github: <a href="https://github.com/williamwbush" 
+                    target="_blank">williamwbush</a></p>
+            </address>
+            
+            <p class="center"><a href="#top">back to top</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
